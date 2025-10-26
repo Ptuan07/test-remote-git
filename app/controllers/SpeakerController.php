@@ -60,7 +60,7 @@ class SpeakerController
             'name' => $_POST['name'],
             'email' => $_POST['email'],
             'phone' => $_POST['phone'],
-            'profile_image' => $_FILES['profile_image']['name'] ?? '',
+            'profile_image' => $_FILES['profile_image']['name'] ? '',
             'title' => $_POST['title'],
             'bio' => $_POST['bio']
         ];
@@ -85,3 +85,4 @@ class SpeakerController
         }
     }
 }
+//aaaaaaaaaaaaaaaaaaaaaaaaaa
